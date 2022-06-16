@@ -1,0 +1,456 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+
+
+
+
+/* mobile first*/
+/* smartphone */
+
+@media(min-width:480px){
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.border{
+    border: black solid 2px;
+}
+
+
+body{
+    height: 100%;
+    grid-template-areas: 
+     "header"
+     "navegacion"
+     "principal"
+     "footer";
+     grid-template-columns: 100%;
+     grid-template-rows: 1fr 1fr 4fr 1fr;
+     background-color: rgb(255, 255, 255);
+     width: 100%;
+}
+
+
+/* inicio de la parte de encabezado */
+#header{
+    grid-area: header;
+}
+
+
+
+#header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#header h2{
+    font-size: 15px;
+}
+/* final de la parte de encabezado */
+
+
+
+/* inicio de la parte de navegacion */
+.color{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+/* final de la parte de navegacion */
+
+
+
+
+/* inicio de la parte principal */
+#principal{
+     grid-area: principal;
+     display: flex;
+     flex-direction: column;
+     margin: 20px;
+   
+}
+
+
+.imgPrincipales{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 40px;
+
+
+}
+
+
+.imgPrincipales p{
+  width: 170px;
+  margin: 40px;
+}  
+
+
+
+.imgPrincipales1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+
+
+.imgPrincipales1 p{
+   width: 170px;
+   margin: 40px;
+}
+
+/* final de la parte principal */
+
+
+
+
+/* inicio de pie de pagina */
+#footer{
+    grid-area: footer;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    background-color: rgb(44, 5, 13);
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.iconos{
+    background-color: rgb(128, 120, 120);
+}
+/* final del pie de pagina */
+
+
+
+
+
+/* inicio de la parte de mantenimiento */
+.mantenimientoMain{
+    background-color: rgb(255, 255, 255);
+
+}
+.seccionMantenimiento{
+   text-align: center;
+}
+
+.seccionMantenimiento div{
+     border: 10px antiquewhite solid;
+}
+.seccionMantenimiento h1{
+    color: black;
+    padding: 40px;
+}
+.seccionMantenimiento div h2{
+  text-align: start;
+  margin: 20px;
+  color: black;
+}
+.seccionMantenimiento div p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: start;
+    margin: 30px;
+    font-weight: 400;
+}
+.seccionMantenimiento div img{
+    height: 40%;
+    width: 40%;
+    
+}
+
+.subir{
+    display: flex;
+    justify-content: end;
+    width: 98%;
+  position:fixed;
+  bottom: 20px;
+}
+/* final de la parte de mantenimienro */
+  
+
+
+/* inicio de la parte de preguntas frecuentes */
+.preguntasFrecuentes{
+  font-size: 13px;
+}
+
+.preguntasFrecuentes p{
+
+    margin: 20px;
+    border: 5px double crimson;
+    border-radius: 10px;
+}
+/* final de la parte de preguntas frecuentes */
+
+}
+
+
+
+
+
+
+
+/* mobile tablet */
+@media(min-width:768px) {
+
+    body{
+        height: 100%;
+        grid-template-areas: 
+         "header"
+         "navegacion"
+         "principal"
+         "footer";
+         grid-template-columns: 100%;
+         grid-template-rows: 1fr 1fr 4fr 1fr;
+         background-color:antiquewhite;
+    }
+    
+    
+    /* inicio de la parte de encabezado */
+
+    #header{
+        background-color: black;
+        color: white;
+        height: 100px;
+    }
+    
+    
+    
+    #header h1{
+     margin-top: 20px;
+    }
+    
+    /* final de la parte de encabezado */
+    
+    
+    
+    /* inicio de la parte principal */
+    #principal{
+        width: 100%;
+        color: white;
+        font-size: 17px;
+    }
+    
+
+    .imgPrincipales p{
+        width: 300px;
+        color: rgb(0, 0, 0);
+    
+    } 
+
+    .imgPrincipales1 p{
+        color: white;
+    }
+    /* final de la parte principal */
+    
+    
+
+    /* inicio de pie de pagina */
+    #footer{
+       background-color: rgb(0, 0, 0);
+       color: rgb(255, 255, 255);
+       margin: 0;
+    
+    }
+    /* final del pie de pagina */
+    
+    
+
+
+    /* inicio de la parte de preguntas frecuentes */
+    .preguntasFrecuentes{     
+        margin: 30px;
+    }
+    
+    .preguntasFrecuentes p{
+     margin-bottom: 40px;
+     color: rgb(0, 0, 0);
+
+     
+    }
+    /* final de la parte de preguntas frecuentes */
+}
+   
+
+
+
+
+/* desktop */
+@media (min-width:1024px){
+
+
+    .animaciones:hover{
+        transform: scale(1.2);
+        transition: all 0.6s;
+    }
+
+body{
+    grid-template-areas: 
+     "header"
+     "navegacion"
+     "principal"
+     "footer";
+     grid-template-columns: 100%;
+     grid-template-rows: 2fr 1fr 4fr 1fr;
+     background-color: rgb(131, 112, 112);
+}
+
+/* inicio de la parte de encabezado */
+#header{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:rgb(255, 255, 255); 
+      background-color: rgb(124, 115, 115);
+}
+   
+
+#header h1{
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+/* final de la parte de encabezado */
+
+
+
+/* inicio de la parte de navegacion */
+
+nav ul{
+    width: 100%;
+    gap: 25px;
+    display: flex;
+     align-items: center;
+}
+.inicio{
+    font-size: 20px;
+}
+/* final de la parte de navegacion */
+
+
+
+/* inicio de la parte principal */
+#principal{
+    color: white;
+}
+
+.imgPrincipales{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+     margin-top: 100px;
+}
+
+.imgPrincipales p{
+    width: 300px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+}
+
+    
+
+.imgPrincipales1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse; 
+    margin-top: 100px;
+}
+
+.imgPrincipales1 p{
+    width: 300px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+   
+}
+/* final de la parte principal */
+
+
+
+
+
+/* inicio de pie de pagina */
+#footer{
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    background-color: rgb(58, 4, 4);
+    color: white;
+    flex-direction: column-reverse;
+
+} 
+
+#footer h3{
+    font-size: 25px;
+}
+
+.iconos{
+   margin-top: 20px;
+   height:250px;
+   width: 200px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(117, 93, 40);
+}
+/* final del pie de pagina */
+
+
+
+
+/* inicio de la seccion de mantenimiento */
+.mantenimientoMain{
+    background-color: rgb(255, 255, 255);
+
+}
+/* final de la seccion mantenimiento */
+
+
+
+
+/* inicio de la parte de preguntas frecuentes */
+.preguntasFrecuentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preguntasFrecuentes p{
+    width: 600px;
+    border-radius: 20px/10px;
+    border: 10px  rgb(255, 255, 255) solid;
+    margin: 25px;
+    background-color:antiquewhite;
+    color: rgb(44, 3, 3);
+    font-size: 20px;
+
+}
+  /* final de la parte de preguntas frecuentes */
+}
+   
+
+
+
+
+
