@@ -1,0 +1,31 @@
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.border{
+    border: black solid 2px;
+}
+
+
+.animaciones{
+    &:hover{
+        transform: scale(1.2);
+        transition: all 0.6s;
+    }
+    
+}
+ 
+
+
+body{
+    grid-template-areas: 
+     "header"
+     "navegacion"
+     "principal"
+     "footer";
+     grid-template-columns: 100%;
+     grid-template-rows: 2fr 1fr 4fr 1fr;
+     background-color: rgb(131, 112, 112);
+}

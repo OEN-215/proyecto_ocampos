@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.border {
+  border: black solid 2px;
+}
+
+.animaciones:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+body {
+      grid-template-areas: "header" "navegacion" "principal" "footer";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 2fr 1fr 4fr 1fr;
+      grid-template-rows: 2fr 1fr 4fr 1fr;
+  background-color: #837070;
+}
+
+header {
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  background-color: #7c7373;
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+nav ul {
+  width: 100%;
+  gap: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.inicio {
+  font-size: 25px;
+}
+
+.color {
+  color: white;
+}
+
+.principal {
+  color: white;
+}
+
+.principal div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+  gap: 100px;
+}
+
+.principal div p {
+  width: 300px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+.seccionMantenimiento {
+  text-align: center;
+}
+
+.seccionMantenimiento h1 {
+  color: black;
+  padding: 40px;
+}
+
+.seccionMantenimiento div h2 {
+  text-align: start;
+  margin: 20px;
+  color: black;
+}
+
+.seccionMantenimiento div p {
+  color: white;
+  font-size: 25px;
+  text-align: start;
+  margin: 30px;
+  font-weight: 400;
+}
+
+.seccionMantenimiento div img {
+  height: 40%;
+  width: 40%;
+}
+
+.subir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 98%;
+  position: fixed;
+  bottom: 20px;
+}
+
+.preguntasFrecuentes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preguntasFrecuentes p {
+  width: 600px;
+  border-radius: 20px/10px;
+  border: 10px white solid;
+  margin: 25px;
+  background-color: burlywood;
+  color: #2c0303;
+  font-size: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-color: #3a0404;
+  color: white;
+  margin-top: 100px;
+}
+
+footer h3 {
+  font-size: 25px;
+}
+
+footer figure {
+  margin-top: 25px;
+  height: 50px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #755d28;
+}
+/*# sourceMappingURL=style.css.map */

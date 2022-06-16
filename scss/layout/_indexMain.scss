@@ -1,0 +1,18 @@
+.principal{
+    color: white;
+    div{
+        display: flex;
+        flex-direction: row;
+         justify-content: center;
+         margin-top: 200px;
+         gap: 100px;
+          p{
+            width: 300px;
+            font-weight:400;
+            font-size: 20px;
+            color: $color;
+    
+        }
+
+    }
+}
