@@ -1,0 +1,151 @@
+$alto:400px;
+$ancho:400px;
+
+/*operaciones*/
+.principal{
+    section{
+        div{
+            img{
+                height: $alto/2;
+                width: $ancho/2;
+            }
+        }
+    }
+}
+
+/*condicioneales*/
+$condicion:fondo;
+
+footer{
+    @if $condicion == fondo {
+        background-color: rgb(58, 4, 4);
+    }
+
+    @else if $condicion == azul {
+        background-color: antiquewhite
+    }
+
+    @else {
+        background-color:rgb(182, 121, 42);
+    }
+}
+
+$condicion2:true;
+
+header{
+    @if $condicion2 {
+        color:rgb(255, 255, 255); 
+        background-color: rgb(48, 44, 44);
+    }
+}
+
+
+
+/*bucle*/
+$i:1;
+@for $i from 1  through 4 {
+    .ejemplo_#{$i}{
+      color: black;
+      background-color: rgb(110, 106, 128);
+      text-align: center;
+      font-size: 10px*$i;
+    }
+}
+
+
+/*lista*/
+@each $naturaleza in naturaleza1, naturaleza2, naturaleza3{
+        .#{$naturaleza}-img{
+            background-image: url('../assets/img/#{$naturaleza}.jpg');
+            background-size :cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: $alto;
+            width: $ancho;
+            margin: 30px;
+            border-radius: 5px;
+            border: solid rgb(131, 83, 21) 5px;
+        }
+}
+.ejemploLista{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* mapa*/
+
+$botonera:(
+    boton1:violet,
+    boton2:red,
+    boton3:blue,
+);
+
+
+@each $botones, $color in $botonera {
+       .btn--#{$botones}{
+        background-color: $color;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+       }
+}
+
+.ejemploMapa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+/*extend*/
+
+.ejemploExtend{
+    width: $ancho/4;
+    height: $alto/4;
+    background-color: aqua;
+    border-radius: 30px;
+    margin: 20px
+}
+
+.ejemploExtend--div1 {
+    @extend .ejemploExtend;
+        &:hover{
+            transform: scale(1.5) translateX(200px) rotate(90deg);
+            transition: all 2s;
+        }
+}
+
+.ejemploExtend--div2{
+    @extend .ejemploExtend;
+    background-color: red;
+    &:hover{
+        transform: scale(1.9) translateX(200px) rotateY(90deg);
+        transition: all 2s;
+    }
+
+}
+
+.ejemploExtend--div3{
+    @extend .ejemploExtend;
+    &:hover{
+        transform: scale(1.9) translateX(200px) rotatex(90deg);
+        transition: all 2s;
+    }
+
+}
+
+/*mixins*/
+
+ @mixin sizes ( $height, $width){
+       height: $height;
+       width: $width;
+ }
+
+
+
+ .ejemploMixins{
+    @include sizes(200px,200px);
+    background-color:red;
+ }
