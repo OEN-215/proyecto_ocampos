@@ -13,13 +13,13 @@
 <body>
     <header id="header">
 
-        <h2>logotipo</h2> 
+      <h2 class="logo">logotipo</h2> 
 
-        <h1>Reparacion y Mantenimiento De Pc</h1>
+      <h1>Reparacion y Mantenimiento De Pc</h1>
 
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navPrincipal">
         <div class="container-fluid ">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,23 +27,20 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
            
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="animaciones">
+              <li>
                 <a class="color inicio" href="../index.html">Inicio</a>
               </li>
-              <li class="nav-item animaciones">
-                <a class="color "  aria-current="page" href="mantenimiento.html">mantenimiento</a>
+              <li class="nav-item ">
+                <a class="color "  aria-current="page" href="mantenimiento.html">Mantenimiento</a>
               </li>
-              <li class="nav-item animaciones">
-                <a class="color "  aria-current="page" href="preguntas frecuentes.html">preguntas frecuentes</a>
+              <li class="nav-item ">
+                <a class="color "  aria-current="page" href="preguntas frecuentes.html">Preguntas frecuentes</a>
               </li>
-              <li class="nav-item animaciones">
-                <a class="color"  aria-current="page" href="historia.html">historia</a>
+              <li class="nav-item ">
+                <a class="color"  aria-current="page" href="historia.html">Historia</a>
               </li>
-              <li class="nav-item animaciones">
-                <a class="color" aria-current="page" href="contactos.html">contactos</a>
-              </li>
-              <li class="nav-item animaciones">
-                <a class="color" aria-current="page" href="sass2.html">sass2</a>
+              <li class="nav-item">
+                <a class="color" aria-current="page" href="contactos.html">Contactos</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -55,19 +52,144 @@
       </nav>
           
        
-    <main class="preguntasFrecuentes"> 
-        <p class="animaciones">¿Cada cuanto debo hacerle un mantenimiento a mi computadora?</p>
-        <p class="animaciones"> ¿Porque mi Ordenador va Lento?</p>
-        <p class="animaciones">¿Cómo prevenir la pérdida de datos por avería del disco duro?</p>
-        <p class="animaciones">¿Cómo pueden llegar los virus informáticos a mi ordenador?</p>
-        <p class="animaciones">¿Puedo Tener mas de un Sistema operativo en mi Ordenador?</p>
-        <p class="animaciones">¿Cuál es la diferencia entre las versiones de 32 y 64 bits de Windows?</p>
-        <p class="animaciones">¿Es posible ejecutar programas de 32 bits en un equipo de 64 bits?</p>
-        <p class="animaciones">¿por que Mi computadora se apaga sin razón?</p>
-        <p class="animaciones">Mi computadora tiene virus, ¿que debo hacer?</p>
-        <p class="animaciones">¿Si formateo mi computadora, voy a perder mi información?</p>
-        <p class="animaciones">¿Mi computadora no sirve y yo necesito recuperar mi información personal, que puedo hacer?</p>
-        <p class="animaciones">!Mi computadora no enciende¡</p>
+    <main class="preguntasFrecuentes container">
+      <h1>preguntas frecuentes acerca de la reparacion de computadoras</h1> 
+
+      <h2>preguntas generales</h2>
+        <nav>
+          <ul>
+              <li> <a href="#respuesta1"  class="animaciones">¡Mi computadora se calienta demasiado!</a>
+              </li>
+              <li><a href="#respuesta2"  class="animaciones">¿Cada cuanto debo hacerle un mantenimiento a mi computadora?</a></li>
+              <li><a href="#respuesta3"  class="animaciones"> ¿Porque mi Ordenador va Lento?</a></li>
+              <li> <a href="#respuesta4" class="animaciones">¿Cómo prevenir la pérdida de datos por avería del disco duro?</a></li>
+              <li><a href="#respuesta5"  class="animaciones">¿Cómo pueden llegar los virus informáticos a mi ordenador?</a></li>
+              <li ><a href="#respuesta6" class="animaciones">¿Puedo Tener mas de un Sistema operativo en mi Ordenador?</a></li>
+              <li><a href="#respuesta7"  class="animaciones">¿Cuál es la diferencia entre las versiones de 32 y 64 bits de Windows?</a></li>
+              <li> <a href="#respuesta8"  class="animaciones">¿Es posible ejecutar programas de 32 bits en un equipo de 64 bits?</a></li>
+              <li> <a href="#respuesta9"  class="animaciones">¿por que Mi computadora se apaga sin razón?</a>
+              </li>
+              <li><a href="#respuesta10"  class="animaciones">Mi computadora tiene virus, ¿que debo hacer?</a>
+              </li>
+              <li> <a href="#respuesta11"  class="animaciones">¿Mi computadora no sirve y yo necesito recuperar mi información personal, que puedo hacer?</a></li>
+              <li><a href="#respuesta12"  class="animaciones">!Mi computadora no enciende¡</a>
+              </li>             
+          </ul>
+        </nav>
+
+         <p class="border divicionRespuestas">seccion de respuestas</p>
+
+        <div class="respuestasMain">
+         <div>
+          <h3 id="respuesta1">¡Mi computadora se calienta demasiado!</h3> 
+
+          <p>El calor es uno de los enemigos mortales de las computadoras portátiles, por lo que   atender   este problema a tiempo nos puede ayudar a prevenir problemas futuros y mayor gasto.
+          </p>
+          <p>
+           El exceso de calor en una computadora portátil se debe a la inadecuada ventilación de la misma, la cual se puede corregir con una limpieza interna de la maquina, o con la compra de un ventilador externo, el cual nos ayude a disipar mejor el calor y mantener la temperatura más estable.</p>
+          </div>
+
+          <div> 
+            <h3 id="respuesta2">¿Cada cuanto debo hacerle un mantenimiento a mi computadora?</h3>
+
+            <p>Es necesario hacerle un limpieza a tu computadora por lo menos cada 6 meses, ya que las computadoras pueden almacenar una gran cantidad de polvo, pelusa y hasta insectos que pueden perjudicar el optimo funcionamiento de tu equipo.</p>
+          </div>
+
+          <div>
+             <h3 id="respuesta3">¿Porque mi Ordenador va Lento?</h3>
+
+            <p>Una computadora puede estar muy lenta debido a dos factores. El primero puede ser que tenga insuficientes recursos para funcionar adecuadamente. (“Falta de memoria ram, o microprocesador en mal estado”) y la segunda puede ser porque el Windows dañado o se encuentre infectado por virus.
+            </p>
+          </div>
+
+          <div>
+            <h3 id="respuesta4">¿Cómo prevenir la pérdida de datos por avería del disco duro?</h3>
+
+             <p>
+              Sitúa tu equipo en un ambiente seguro: limpio, fresco, seco y separado de fuentes que         puedan generar campos magnéticos.
+             </p>
+            <p>
+              Recuerda apagar el equipo siguiendo las indicaciones de su sistema operativo y desconectarlo de 
+              la red eléctrica cuando no esté en uso.
+            </p>
+            <p>
+              Mantén el equipo en la misma posición (vertical u horizontal) en la que se formateó el disco duro.
+            </p>
+            <p>
+              Utiliza un buen antivirus y procura actualizarlo al menos una vez al mes.
+            </p>
+            <p>
+              Actualiza con frecuencia el sistema operativo.
+            </p>
+            <p>
+              Procura no instalar y desinstalar programas de forma indiscriminada.
+            </p>
+            <p>
+              Realiza regularmente copias de seguridad.
+            </p>
+          </div>
+
+
+          <div>
+              <h3 id="respuesta5">¿Cómo pueden llegar los virus informáticos a mi ordenador?</h3>
+              <p>Los virus informáticos pueden infectar un ordenador personal o una red de equipos dispuesta dentro de tu negocio de muchas maneras. Los spyware, virus y programas maliciosos son muy comunes y pueden entorpecer nuestro trabajo apareciendo en memorias USB, en emails o como spam publicitario.</p>
+          </div>
+
+          <div>
+             <h3 id="respuesta6">¿Puedo Tener mas de un Sistema operativo en mi Ordenador?</h3>
+
+             <p>
+             Aunque la mayoría de los PC tienen un único sistema operativo (SO) incorporado, también es posible ejecutar dos sistemas operativos en un ordenador al mismo tiempo. El proceso se conoce como arranque dual, y permite a los usuarios cambiar de sistema operativo en función de las tareas y los programas con los que estén trabajando.
+            </p>
+          </div>
+
+          <div>
+             <h3 id="respuesta7">¿Cuál es la diferencia entre las versiones de 32 y 64 bits de Windows?</h3>
+
+             <p>La principal diferencia entre ambas arquitecturas es que los procesadores de 32 bits no son capaces de gestionar tanta memoria RAM como los de 64. Tengas en tu ordenador 8 o 16 GB de RAM, un sistema operativo de 32 bits sólo puede aprovechar un máximo de 4 GB. Los de 64 bits pueden utilizar muchísima más, teóricamente hasta 16 Exabytes, unos 16 millones de Terabytes.
+             </p>
+          </div>
+
+          <div>
+              <h3 id="respuesta8">¿Es posible ejecutar programas de 32 bits en un equipo de 64 bits?</h3>
+
+              <p>Los programas que dependen de archivos binarios de 16 bits o controladores de 32 bits no se pueden ejecutar en las versiones de 64 bits de Windows a menos que el fabricante del programa proporcione una actualización para el programa.
+              </p>
+          </div>
+
+          <div>
+             <h3 id="respuesta9">¿por que Mi computadora se apaga sin razón?</h3>
+
+             <p>Los problemas de apagado en Windows pueden deberse a muchos factores, como hardware incompatible, programas en conflicto o incluso un controlador dañado. Como resultado, cuando apagas el PC el sistema se reinicia automáticamente en lugar de quedarse completamente apagado.
+             </p>
+          </div>
+
+          <div>
+             <h3 id="respuesta10">Mi computadora tiene virus, ¿que debo hacer?</h3>
+
+             <p>Debes desinfectarla lo más pronto posible, de preferencia que lo hagas con un buen antivirus, el cual te ofrezca una protección efectiva en contra de todas las amenazas latentes que hay en la red.
+             </p>
+          </div>
+
+          <div>
+             <h3 id="respuesta11">
+              ¿Mi computadora no sirve y yo necesito recuperar mi información personal, que puedo hacer?
+              </h3>
+
+              <p>Lo que se puede hacer en ese caso es sacar el disco duro de la computadora y colocarlo en otra, para desde ahí poder sacar la información necesaria y después proceder con la reparación del equipo.
+              </p>
+          </div>
+
+          <div>
+             <h3 id="respuesta12">!Mi computadora no enciende¡</h3>
+
+             <p>Esta es una causa muy común de problema,  lo primero que tenemos que hacer es revisar si el cable de corriente  está correctamente  conectado y si la fuente de poder se encuentra funcionado, si la computadora no hace ningún ruido, ni muestra ninguna luz, es muy probable que tengamos un problema de corriente eléctrica.
+             </p>
+          </div>
+
+         </div>
+
+        </div>
     </main>
 
  
@@ -84,16 +206,16 @@
      <figure  class="iconos" >
 
        <a href="https://es-la.facebook.com/">
-         <img src="../assets/img/bxl-facebook-circle.svg" alt="facebook" class="animaciones">
+         <img src="../assets/img/bxl-facebook-circle.svg" alt="facebook">
        </a>
        <a href="https://www.instagram.com/">
-         <img src="../assets/img/bxl-instagram-alt.svg" alt="instagram" class="animaciones">
+         <img src="../assets/img/bxl-instagram-alt.svg" alt="instagram" >
        </a>
        <a href="https://twitter.com/?lang=es">
-        <img src="../assets/img/bxl-twitter.svg" alt="twitter" class="animaciones">
+        <img src="../assets/img/bxl-twitter.svg" alt="twitter">
        </a>
        <a href="">
-         <img src="../assets/img/bxl-whatsapp-square.svg" alt="whatsapp" class="animaciones">
+         <img src="../assets/img/bxl-whatsapp-square.svg" alt="whatsapp" >
        </a>
    </figure>
 

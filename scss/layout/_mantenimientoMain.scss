@@ -1,36 +1,70 @@
-.seccionMantenimiento{
-    text-align: center;
+/*mantenimiento smartphone*/
+@media(min-width:480px){
+   .mantenimientoMain{
+      h1{
+        text-align:center ;
+        font-size: 18px;
+        margin: 60px;
+        font-weight: 700;
+      }
+
+      div{
+        margin: 50px;
+        h2{
+          font-size: 20px;
+          margin-top: 30px;
+          font-weight: 800;
+        }
+        p{
+          font-size: 18px;
+        }
+        img{
+          margin: 10px auto;
+          height: 300px;
+          width: 400px;
+        }
+      }
+   }
+}
+
+/*mantenimiento tablet*/
+@media(min-width:768px){
+  .mantenimientoMain{
     h1{
-        color:black;
-        padding: 40px;
-       }
+      font-size: 20px;
+    }
 
     div{
-        h2{
-            text-align: start;
-            margin: 20px;
-            color:black;
-          }
-          p{
-             color:$color;
-             font-size: 25px;
-             text-align: start;
-             margin: 30px;
-             font-weight:350;
-           }
-           img{
-            height: 40%;
-            width: 40%;
-    
-        }
-    } 
+      margin: 80px;
+      h2{
+        font-size: 20px;
+      }
+      p{
+        font-size: 21px;
+        font-weight: 3400;
+      }
+      img{
+        height: 400px;
+        width: 600px;
+      }
+    }
  }
+}
 
-
- .subir{
-    display: flex;
-    justify-content: end;
-    width: 98%;
-  position:fixed;
-  bottom: 20px;
+/*mantenimiento desktop*/
+@media(min-width:1024px){
+  .mantenimientoMain{
+    h1{
+      font-size: 23px;
+    }
+    div{
+      img{
+        height: 500px;
+        width: 800px;
+      }
+      p{
+        margin-top: 25px;
+      }
+    }
+ }
 }

@@ -1,15 +1,93 @@
-.preguntasFrecuentes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        p{
-            width: 600px;
-            border-radius: 20px/10px;
-            border: 10px  rgb(255, 255, 255) solid;
-            margin: 25px;
-            background-color:burlywood;
-            color: rgb(44, 3, 3);
+/*preguntas frecuentes smartphone*/
+@media(min-width:480px){
+ .preguntasFrecuentes{
+    h1{
+      margin: 40px;
+      font-size: 17px;
+      text-align: center;
+   }
+    h2{
+      font-size: 15px;
+   }
+   nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      ul{
+        margin: 20px;
+         li{
+          margin: 15px;
+            a{
+             color:$color;
+             text-decoration: none;
+            }
+         }
+      }
+   }
+   .divicionRespuestas{
+      text-align: center;
+      color: white;
+   }
+    .respuestasMain{
+      margin: 30px;
+      div{
+         margin: 40px;
+         h3{
             font-size: 20px;
-        
-        }
+         }
+      }
+   }
+ }
 }
+
+
+/*preguntas frecuentes tablet*/
+@media(min-width:768px){
+   .preguntasFrecuentes{
+      h1{
+        font-size: 21px;
+     }
+      h2{
+        font-size: 17px;
+     }
+   }
+}
+
+/*preguntas frecuentes desktop*/
+@media(min-width:1024px){
+   .preguntasFrecuentes{
+      h1{
+        margin: 40px;
+        font-size: 23px;
+        text-align: center;
+     }
+      h2{
+        font-size: 20px;
+     }
+     nav{
+      align-items:flex-start;
+       ul{
+        margin: 25px;
+         li{
+            a{
+            font-size: 17px;
+            font-weight: 400;
+            }
+         }
+      }
+   }
+      .respuestasMain{
+        margin: 30px;
+         div{
+           margin: 60px;
+            h3{
+              font-size: 25px;
+            }
+            p{
+            font-size: 20px;
+            }
+         }
+      }
+   }
+}
+

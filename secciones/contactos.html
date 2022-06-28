@@ -12,14 +12,14 @@
 </head>
 <body>
     <header id="header">
+       
+      <h2 class="logo">logotipo</h2> 
 
-        <h2>logotipo</h2> 
-
-        <h1>Reparacion y Mantenimiento De Pc</h1>
+      <h1>Reparacion y Mantenimiento De Pc</h1>
 
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navPrincipal">
       <div class="container-fluid ">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,23 +27,20 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
          
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="animaciones">
+            <li>
               <a class="color inicio" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item animaciones">
-              <a class="color "  aria-current="page" href="mantenimiento.html">mantenimiento</a>
+            <li class="nav-item">
+              <a class="color "  aria-current="page" href="mantenimiento.html">Mantenimiento</a>
             </li>
-            <li class="nav-item animaciones">
-              <a class="color "  aria-current="page" href="preguntas frecuentes.html">preguntas frecuentes</a>
+            <li class="nav-item">
+              <a class="color "  aria-current="page" href="preguntas frecuentes.html">Preguntas frecuentes</a>
             </li>
-            <li class="nav-item animaciones">
-              <a class="color"  aria-current="page" href="historia.html">historia</a>
+            <li class="nav-item">
+              <a class="color"  aria-current="page" href="historia.html">Historia</a>
             </li>
-            <li class="nav-item animaciones">
+            <li class="nav-item">
               <a class="color" aria-current="page" href="contactos.html">contactos</a>
-            </li>
-            <li class="nav-item animaciones">
-              <a class="color" aria-current="page" href="sass2.html">sass2</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -54,8 +51,68 @@
       </div>
     </nav>
 
-    <main class="contactosMain">
-     
+    <main class="contactosMain w-100 d-flex justify-content-center">
+      <form class="formularioContacto d-flex justify-content-center">
+        <h2>Contacto</h2>
+        <div class="mb-3 w-75 ">
+          <label for="exampleInputEmail1" class="form-label">ingrese Nombres</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3 w-75">
+          <label for="exampleInputPassword1" class="form-label">ingrese Apellido</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3 w-75 ">
+          <label for="exampleInputEmail1" class="form-label">ingrese Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <select class="form-select mb-4 w-75" aria-label="Default select example">
+          <option value="1">localidad</option>
+          <option value="2">Buenos Aires</option>
+          <option value="3">Ciudad Autónoma de Buenos Aires</option>
+          <option value="1">Catamarca</option>
+          <option value="2">Chaco</option>
+          <option value="3">Chubut</option>
+          <option value="1">Córdoba</option>
+          <option value="2">Corrientes</option>
+          <option value="3">Entre Ríos</option>
+          <option value="1">Formosa</option>
+          <option value="2">Jujuy</option>
+          <option value="3">La Pampa</option>
+          <option value="1">La Rioja</option>
+          <option value="2">Mendoza</option>
+          <option value="3">Misiones</option>
+          <option value="1">Neuquén</option>
+          <option value="2">Río Negro</option>
+          <option value="3">Salta</option>
+          <option value="1">San Juan</option>
+          <option value="2">San Luis</option>
+          <option value="3">Santa Cruz</option>
+          <option value="1">Santa Fe</option>
+          <option value="2">Santiago del Estero</option>
+          <option value="3">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+          <option value="1">Tucumán</option>
+        </select>
+
+        <div class="mb-3 w-75">
+          <label for="exampleInputPassword1" class="form-label">codigo Postal</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="form-floating mb-3 w-75">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">comentario</label>
+        </div>
+
+        <div class="d-flex mb-3 w-75">           
+          <input class="btn btn-primary m-2 w-50" type="submit" value="enviar info">
+          <input class="btn btn-primary m-2 w-50" type="reset" value="borrar info">
+        </div>
+      </form>
+       
    </main>
 
 
@@ -67,16 +124,16 @@
      <figure  class="iconos" >
 
        <a href="https://es-la.facebook.com/">
-         <img src="../assets/img/bxl-facebook-circle.svg" alt="facebook" class="animaciones">
+         <img src="../assets/img/bxl-facebook-circle.svg" alt="facebook">
        </a>
        <a href="https://www.instagram.com/">
-         <img src="../assets/img/bxl-instagram-alt.svg" alt="instagram" class="animaciones" >
+         <img src="../assets/img/bxl-instagram-alt.svg" alt="instagram">
        </a>
        <a href="https://twitter.com/?lang=es">
-        <img src="../assets/img/bxl-twitter.svg" alt="twitter" class="animaciones">
+        <img src="../assets/img/bxl-twitter.svg" alt="twitter" >
        </a>
        <a href="">
-         <img src="../assets/img/bxl-whatsapp-square.svg" alt="whatsapp" class="animaciones" >
+         <img src="../assets/img/bxl-whatsapp-square.svg" alt="whatsapp">
        </a>
    </figure>
 
