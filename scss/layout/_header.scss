@@ -2,18 +2,20 @@
 /* header smartphone*/
 @media(min-width:480px){
   header{
-    height: 100px;
-    background-color: rgb(73, 182, 182);
-    color:$color;
+    display: flex;
+    height: 120px;
+    background-color: darkslategray;
+    color:white;
     h1{
-      text-align: center;
+      width: 100%;
      font-size: 20px;
-     margin-top: 15px;
+     margin-top:65px;
+     text-align: center;
     }
-    h2{
-      font-size: 10px;
-      padding-left: 50px;
-      padding-top: 20px;
+    img{
+     height: 80px;
+     width: 80px;
+     margin-left: 5px;
     }
   }
 }
@@ -24,11 +26,11 @@
     background-color: darkslategray;
     color: antiquewhite;
     h1{
-     font-size: 20px;
-     margin-top: 20px;
+     font-size: 23px;
     }
-    h2{
-      font-size: 12px;
+     img{
+      height: 95px;
+     width: 95px;
     }
   }
 }
@@ -36,13 +38,15 @@
 /*header desktop*/
 @media(min-width:1024px){
   header{
-    background-color: rgb(21, 29, 29);
+    background-color: rgb(143, 116, 77);
+    color: black;
     h1{
-     font-size: 25px;
-     margin-top: 5px;
+      margin-top: 50px;
+     font-size: 30px;
     }
-    h2{
-      font-size: 15px;
+    img{
+     height: 100px;
+     width: 100px;
     }
   }
 }

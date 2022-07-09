@@ -46,19 +46,23 @@
 /* header smartphone*/
 @media (min-width: 480px) {
   header {
-    height: 100px;
-    background-color: #49b6b6;
-    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 120px;
+    background-color: darkslategray;
+    color: white;
   }
   header h1 {
-    text-align: center;
+    width: 100%;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 65px;
+    text-align: center;
   }
-  header h2 {
-    font-size: 10px;
-    padding-left: 50px;
-    padding-top: 20px;
+  header img {
+    height: 80px;
+    width: 80px;
+    margin-left: 5px;
   }
 }
 
@@ -69,25 +73,27 @@
     color: antiquewhite;
   }
   header h1 {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 23px;
   }
-  header h2 {
-    font-size: 12px;
+  header img {
+    height: 95px;
+    width: 95px;
   }
 }
 
 /*header desktop*/
 @media (min-width: 1024px) {
   header {
-    background-color: #151d1d;
+    background-color: #8f744d;
+    color: black;
   }
   header h1 {
-    font-size: 25px;
-    margin-top: 5px;
+    margin-top: 50px;
+    font-size: 30px;
   }
-  header h2 {
-    font-size: 15px;
+  header img {
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -204,6 +210,7 @@
   .principal .objetivo {
     border-radius: 5px;
     background-color: #8eacac;
+    margin-bottom: 100px;
   }
   .principal .objetivo h2 {
     text-align: center;
@@ -218,27 +225,41 @@
   }
   .principal .video {
     color: black;
+    text-align: center;
+  }
+  .principal .video .guia {
+    width: 400px;
+    height: 400px;
   }
   .principal .video p {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 50px;
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: 500;
+  }
+  .principal .video p {
+    font-size: 15px;
+    margin-top: 40px;
     font-weight: 500;
   }
   .principal .video .videoHistoria {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
     padding-bottom: 80px;
-    margin: 10px;
   }
   .principal .video .videoHistoria iframe {
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
   }
 }
 
@@ -293,11 +314,12 @@
     padding-top: 40px;
     font-size: 15px;
   }
-  .principal .video p {
-    font-size: 16px;
+  .principal .video .guia {
+    width: 600px;
+    height: 400px;
   }
   .principal .video .videoHistoria iframe {
-    width: 800px;
+    width: 550px;
     height: 400px;
   }
 }
@@ -360,12 +382,19 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .principal .video p {
-    font-size: 15px;
+  .principal .video .guia {
+    width: 400px;
+    height: 400px;
+  }
+  .principal .video .videoHistoria {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .principal .video .videoHistoria iframe {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 370px;
   }
 }
 

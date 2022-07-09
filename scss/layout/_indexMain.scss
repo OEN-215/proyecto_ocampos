@@ -46,6 +46,7 @@
         .objetivo{
             border-radius: 5px;
             background-color: rgb(142, 172, 172);
+            margin-bottom: 100px;
             h2{
                 text-align: center;
                 font-size: 18px;
@@ -60,21 +61,30 @@
         }
         .video{
             color: $color;
+            text-align: center;
+            .guia{
+                width: 400px;
+               height: 400px; 
+            }
             p{
-                text-align: center;
-                font-size: 14px;
-                margin-top: 50px;
+                font-size: 15px;
+                margin-top: 40px;
+                font-weight: 500;
+            }
+                        p{
+                font-size: 15px;
+                margin-top: 40px;
                 font-weight: 500;
             }
              .videoHistoria{
                 display: flex;
+                align-items: center;
+                flex-direction: column;
                 justify-content: center;
-                 width: 100%;
                  padding-bottom: 80px;
-                 margin: 10px;
                  iframe{
-                    width: 600px;
-                    height: 400px;
+                    width: 400px;
+                    height: 300px;
                 }
             }
         }
@@ -128,12 +138,13 @@
             }
         }
         .video{
-            p{
-                font-size: 16px;
+            .guia{
+                width: 600px;
+               height: 400px; 
             }
              .videoHistoria{
                  iframe{
-                    width: 800px;
+                    width: 550px;
                     height: 400px;
                 }
             }
@@ -183,13 +194,15 @@
         .video{
             display: flex;
             justify-content: space-around;
-            p{
-                font-size: 15px;
+            .guia{
+                width: 400px;
+               height: 400px; 
             }
              .videoHistoria{
+                flex-direction: column;
                  iframe{
-                    width: 500px;
-                    height: 500px;
+                    width: 400px;
+                    height: 370px;
                 }
             }
         }
